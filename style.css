@@ -7,10 +7,10 @@ body{
   font-size:100%;
   margin:3em;
   background: #ff9a9e;
-  color:#fff;
+  color: white;  
 }
 button {
-    background: #C0392B ;
+    background: black ;
 
 }
 notes form {
@@ -27,7 +27,7 @@ ul{
 ul li {
   text-decoration:none;
   color:#000;
-  background:#ffc;
+  background:#FFF5EE;
   display:block;
   height:10em;
   width:10em;

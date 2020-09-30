@@ -66,3 +66,4 @@ function deleteNotes (notesId) {
       itemToRemove.remove()
     })
 }
+renderNotesList()
