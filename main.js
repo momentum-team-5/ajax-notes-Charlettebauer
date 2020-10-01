@@ -7,12 +7,12 @@ document.addEventListener('submit', function (event) {
   createNotes()
 })
 
-notesList.addEventListener('click', function (e) {
-  if (e.target.matches('.delete')) {
-    console.log(e.target.parentElement.dataset.id)
-    deleteNotes(e.target.parentElement.dataset.id)
-  }
-})
+ notesList.addEventListener('click', function (e) {
+   if (e.target.matches('.delete')) {
+     console.log(e.target.parentElement.dataset.id)
+     deleteNotes(e.target.parentElement.dataset.id)
+   }
+ })
 
 function renderNotesList () {
   fetch(url)
@@ -62,7 +62,7 @@ function deleteNotes (notesId) {
     })
     .then(res => res.json())
     .then(data => {
-      const itemToRemove = document.querySelector(`#item-${notesId}`)
+      const itemToRemove = document.querySelector(`li[data-id='${notesId}']`)
       itemToRemove.remove()
     })
 }
